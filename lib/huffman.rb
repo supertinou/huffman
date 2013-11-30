@@ -1,5 +1,7 @@
+#require 'active_support/all'
 require "huffman/version"
 
 module Huffman
-  # Your code goes here...
+
+ 
 end
