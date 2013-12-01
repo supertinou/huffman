@@ -4,15 +4,16 @@ describe "LetterFrequency" do
 
 	it "get the frequencies of the characters of a text" do
 
-		# Create an array with random letters frequencies
+		# Create an hash (associative array) with random letters frequencies
 		#
-		# a : 1
-		# b : 8
-		# c : 9
+		# a => 1
+		# b => 8
+		# c => 9
 
-		frequencies = ('a'..'z').collect{|c| [c,rand(100)]} 
-		# Create the string from the frequencies
-		txt = "" ; frequencies.each{|letter,freq| txt += letter*freq}
+		frequencies = {} 
+		('a'..'z').each{|c| frequencies[c] = rand(1..100) }
+		# Create a string from the frequencies hash
+		txt = frequencies.map{|letter,freq| letter*freq}.join.split('').shuffle.join
 		# Test
 		LetterFrequency.get_frequencies(txt).should == frequencies
 
