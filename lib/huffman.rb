@@ -5,4 +5,5 @@ require "huffman/letter_frequency"
 module Huffman
 
 
+
 end
