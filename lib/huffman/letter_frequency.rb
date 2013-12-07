@@ -4,12 +4,18 @@ module Huffman
 
 		def get_frequencies(txt)
 
-			# {} permet de déclarer le tableau associatif
-			frequencies = {}
-			txt.each_char{|char| frequencies[char] = frequencies.has_key?(char) ? frequencies[char] + 1 : 1 }
-			
+			# {} permet de déclarer un tableau associatif
+			frequencies = Hash.new(0)
+			txt.each_char{|char| frequencies[char] += 1 }
+
 			# return
-			frequencies
+
+			# Le tableau des frequences est trié par frequences croissantes
+			# [
+			#	['a' => 1],
+			# ...
+			# ]
+			frequencies.sort_by{|h| h[1]}
 		end
 	end
 end
