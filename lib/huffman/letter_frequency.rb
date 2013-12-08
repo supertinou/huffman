@@ -15,7 +15,7 @@ module Huffman
 			#	['a' => 1],
 			# ...
 			# ]
-			frequencies.sort_by{|h| h[1]}
+			frequencies.sort_by{|h| [h[1], h[0]]}
 		end
 	end
 end

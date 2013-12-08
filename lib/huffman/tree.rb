@@ -3,6 +3,11 @@ require 'graphviz'
 module Huffman
 	class Tree
 
+		# Methodes délégués au noeud racine
+
+		delegate :visit, :to => :@root
+		delegate :visit_and_map, :to => :@root
+
 		def initialize(frequencies)
 			# Liste de noeuds feuilles toujours triés par ordre croissant qui vont nous permettre de créer l'arbre de Huffman
 			nodes = frequencies.map{|freq| Node.new(freq[1], freq[0])}
@@ -19,7 +24,7 @@ module Huffman
 				# On créer un noeud parent
 				parent = Node.new(node1.value+node2.value,nil,node1,node2)
 				
-				# 2) On ajoute se noeud à la liste triée
+				# 2) On ajoute le noeud à la liste 
 				nodes << parent 
 				# On trie la liste
 				nodes = nodes.sort_by{|node| node.value}
@@ -28,17 +33,34 @@ module Huffman
 			@root = nodes.first
 		end
 
-		def display_as_pdf(path="tree")
+
+		def display_as_png(path="tree")
 
 			# Create a new graph
-			g = GraphViz.new( :G, :type => :digraph )
+			g = GraphViz.new(:G)
 
-			# Create two nodes
-			hello = g.add_nodes( "Hello" )
-			world = g.add_nodes( "World" )
+			# Ici on ne peut pas créer la représentation du graphe en visitant l'arbre parce que les
+			# noeuds doivents d'abords être crées pour ajouter des arrêtes
+			
+			nodes = {}
+			# Huffman::Node.object_id: 	graphviz_node
+
+			visit(:postorder) do |node|
+				# C'est un noeud parent inventé
+				color = node.symbol ? "yellow" : "red"
+				label = node.symbol ? " #{node.symbol}" : ''
+
+				graphviz_node = g.add_nodes(node.__id__.to_s, label: "#{node.value}#{label}", "style" => "filled", "color" => color )
+				nodes[node.__id__] = graphviz_node
+
+				# On créer les arretes de ses enfants
+				g.add_edges(graphviz_node, nodes[node.left.__id__] ) if node.left
+				g.add_edges(graphviz_node, nodes[node.right.__id__] ) if node.right
+
+			end
 
 			# Create an edge between the two nodes
-			g.add_edges( hello, world )
+			# g.add_edges( hello, world )
 
 			# Generate output image
 			g.output( :png => "#{path}.png" )

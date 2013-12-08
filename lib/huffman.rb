@@ -11,7 +11,7 @@ module Huffman
 
 		frequencies = LetterFrequency.get_frequencies(txt)
 		tree = Tree.new(frequencies)
-		tree.display_as_pdf()		 
+		tree.display_as_png()		 
 	end
 
 	def decode_text(txt)

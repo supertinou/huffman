@@ -12,7 +12,7 @@ module Huffman
 
 		end
 
-		context "with a binary tree" do
+		context "with a particular binary tree" do
 			# We consider the tree example in the Readme
 			# 	      1
 			# 	   /     \

@@ -15,7 +15,7 @@ describe "LetterFrequency" do
 		# Create a string from the frequencies hash
 		txt = frequencies.map{|letter,freq| letter*freq}.join.split('').shuffle.join
 		# Test
-		Huffman::LetterFrequency.get_frequencies(txt).should == frequencies.sort_by{|h| h[1]}
+		Huffman::LetterFrequency.get_frequencies(txt).should == frequencies.sort_by{|h| [h[1], h[0]]}
 
 	end
 
