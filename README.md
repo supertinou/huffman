@@ -47,7 +47,7 @@ Huffman.decode_text(txt_encoded, dictionnary) # text_decoded
 <table>
   <tr>
     <th>Parcours</th>
-    <th>Implémentation</th>
+    <th>Fonction de visite</th>
     <th>Résultat</th>
   </tr>
   <tr>
