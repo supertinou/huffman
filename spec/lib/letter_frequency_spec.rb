@@ -2,7 +2,7 @@ require "spec_helper.rb"
 
 describe "LetterFrequency" do 
 
-	it "get the frequencies of the characters of a text" do
+	it "get the sorted frequencies of the characters of a text" do
 
 		# Create an hash (associative array) with random letters frequencies
 		#
@@ -15,7 +15,7 @@ describe "LetterFrequency" do
 		# Create a string from the frequencies hash
 		txt = frequencies.map{|letter,freq| letter*freq}.join.split('').shuffle.join
 		# Test
-		Huffman::LetterFrequency.get_frequencies(txt).should == frequencies
+		Huffman::LetterFrequency.get_frequencies(txt).should == frequencies.sort_by{|h| h[1]}
 
 	end
 

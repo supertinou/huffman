@@ -1,4 +1,4 @@
-#require 'active_support/all'
+require 'active_support/all'
 require "huffman/version"
 require "huffman/letter_frequency"
 require "huffman/node"
@@ -10,7 +10,8 @@ module Huffman
 	def encode_text(txt)
 
 		frequencies = LetterFrequency.get_frequencies(txt)
-		tree = Tree.new.build(frequencies)		 
+		tree = Tree.new(frequencies)
+		tree.display_as_pdf()		 
 	end
 
 	def decode_text(txt)
