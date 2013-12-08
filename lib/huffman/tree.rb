@@ -39,23 +39,16 @@ module Huffman
 			# Create a new graph
 			g = GraphViz.new(:G)
 
-			# Ici on ne peut pas créer la représentation du graphe en visitant l'arbre parce que les
-			# noeuds doivents d'abords être crées pour ajouter des arrêtes
-			
-			nodes = {}
-			# Huffman::Node.object_id: 	graphviz_node
-
 			visit(:postorder) do |node|
 				# C'est un noeud parent inventé
 				color = node.symbol ? "yellow" : "red"
 				label = node.symbol ? " #{node.symbol}" : ''
 
 				graphviz_node = g.add_nodes(node.__id__.to_s, label: "#{node.value}#{label}", "style" => "filled", "color" => color )
-				nodes[node.__id__] = graphviz_node
 
 				# On créer les arretes de ses enfants
-				g.add_edges(graphviz_node, nodes[node.left.__id__] ) if node.left
-				g.add_edges(graphviz_node, nodes[node.right.__id__] ) if node.right
+				g.add_edges(graphviz_node, g.get_node(node.left.__id__.to_s)) if node.left
+				g.add_edges(graphviz_node, g.get_node(node.right.__id__.to_s)) if node.right
 
 			end
 
