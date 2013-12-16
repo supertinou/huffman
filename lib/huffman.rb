@@ -8,7 +8,6 @@ module Huffman
 	extend self
 
 	def encode_text(txt)
-
 		frequencies = LetterFrequency.get_frequencies(txt)
 		tree = Tree.new(frequencies)
 		tree.display_as_png()		 

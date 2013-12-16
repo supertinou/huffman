@@ -4,14 +4,6 @@ module Huffman
 
 	describe Node do 
 
-		xit "can get a node and it will be inserted depending on the way we want to" do
-			
-			a = Node.new([1,"a"])
-			b = Node.new([50,'b'])
-			b = Node.new([50,'b'])
-
-		end
-
 		context "with a particular binary tree" do
 			# We consider the tree example in the Readme
 			# 	      1

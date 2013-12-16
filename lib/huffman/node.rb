@@ -1,12 +1,12 @@
 module Huffman
 	class Node
-	    attr_accessor :value, :symbol, :left, :right
+	    attr_accessor :value, :binary_value, :symbol, :left, :right
 	    # Set the getters and setters
 
 	    def initialize(value=nil, symbol=nil, left=nil, right=nil)
 	    	# The value of the node can't be nil
 	    	raise StandardError.new "The value of the node cannot be nil" if not value
-	        @value, @symbol, @left, @right = value, symbol, left, right
+	        @value, @symbol, @left, @right, @binary_value = value, symbol, left, right, ''
 	    end
 
 
@@ -42,6 +42,19 @@ module Huffman
 	    	visit(order){|node| array << yield(node)}
 	    	array
 	    end
+
+	    # Parcours les noeuds pour leur donner leur valeur binaire de Huffman
+	    def set_binary_values
+	    	if @left
+	    		@left.binary_value = @binary_value + '0'
+		        @left.set_binary_values
+		    end
+	    	if @right
+	    		@right.binary_value = @binary_value + '1'
+		        @right.set_binary_values
+	    	end
+	    end
+
 
 	    def leaf?
 	    	(not @left and not @right)
