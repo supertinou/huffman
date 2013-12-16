@@ -29,6 +29,11 @@ module Huffman
 				# Celà influence sur la structure de l'arbre
 			end
 
+			it "build and get the right dictionnary" do
+				dict = tree.dictionnary
+				expected_dict = {"00"=>"C", "01"=>"D", "100"=>"A", "101"=>"B", "11"=>"E"}
+				dict.should == expected_dict
+			end
 		end
 	end
 end

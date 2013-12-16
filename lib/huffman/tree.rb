@@ -29,7 +29,13 @@ module Huffman
 			set_binary_values
 		end
 
-
+		# On récupére la table de correspondance
+		def dictionnary
+			# '001' => A
+			h = {}
+			visit(:postorder){|node| h[node.binary_value] = node.symbol if node.symbol }
+			h
+		end
 
 
 		def display_as_png(path="tree")
