@@ -44,7 +44,7 @@ Huffman.encode_file(file_name) # write a file_name.huffman-encoded file and a fi
 
 Décoder un fichier texte :
 ```ruby
-Huffman.decode_file(huffman_encode_file,huffman-dictionnary) # write a huffman-encoded-back-to-original file
+Huffman.decode_file(huffman_encoded_file,huffman-dictionnary) # write a huffman-encoded-back-to-original file
 ```
 
 ## Specifications

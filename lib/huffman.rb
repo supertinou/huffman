@@ -4,11 +4,16 @@ require "huffman/version"
 require "huffman/letter_frequency"
 require "huffman/node"
 require "huffman/tree"
+require "huffman/log"
+
+logger = Logger.new(STDOUT)
 
 module Huffman
 	extend self
 
 	def encode_text(txt)
+		log.info "Encodage du texte"
+
 		frequencies = LetterFrequency.get_frequencies(txt)
 		tree = Tree.new(frequencies)
 		tree.display_as_png()
