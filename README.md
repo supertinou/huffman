@@ -28,14 +28,30 @@ Ou installez la indépendamment :
 Encoder un texte :
 
 ```ruby
-Huffman.encode_text(txt) # text_encoded, dictionnary
+Huffman.encode_text(txt) # return text_encoded, dictionnary
 ```
 
     
 Décoder un texte :
 ```ruby
-Huffman.decode_text(txt_encoded, dictionnary) # text_decoded
+Huffman.decode_text(txt_encoded, dictionnary) # return text_decoded
 ```
+
+Encoder un fichier texte :
+```ruby
+Huffman.encode_file(file_name) # write a file_name.huffman-encoded file and a file_name.huffman-dictionnary
+```
+
+Décoder un fichier texte :
+```ruby
+Huffman.decode_file(huffman_encode_file,huffman-dictionnary) # write a huffman-encoded-back-to-original file
+```
+
+## Specifications
+
+Executez cette commande pour consulter les spécifications
+
+    $ rake
 
 ## Les différents parcours d'un arbre binaire 
 
