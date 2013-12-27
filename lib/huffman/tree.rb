@@ -44,7 +44,22 @@ module Huffman
 			visit(:postorder) do |node|
 				# C'est un noeud parent inventé
 				color = node.symbol ? "yellow" : "red"
-				label = node.symbol ? " #{node.symbol}" : ''
+				label = case node.symbol
+					when EOT
+						" EOT"
+					when "\t"
+						" TAB"
+					when "\b"
+						" BACKSPACE"
+					when " "
+						" WHITESPACE"
+					when "\n"
+						" LINE RETURN"		
+					else 
+						"#{node.symbol ? " " +node.symbol : ""}"
+				end
+
+
 				graphviz_node = g.add_nodes(node.__id__.to_s, label: "#{node.value}:#{node.binary_value}#{label}", "style" => "filled", "color" => color )
 				# On créer les arretes de ses enfants
 				g.add_edges(graphviz_node, g.get_node(node.left.__id__.to_s)) if node.left
