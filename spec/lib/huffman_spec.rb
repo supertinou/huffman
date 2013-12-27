@@ -11,7 +11,8 @@ module Huffman
 
 		it "decode an encoded file and get back the original file" do
 			
-			file_name = "data/Les_miserables_Tome_I_Chapitre_1-5.txt"
+			file_name = "data/Les_miserables_Tome_I_Chapitre_1-5.txt" 
+			#file_name = "data/Codage de Huffman - Wikipedia.html"
 			#file_name = "data/test.txt" 
 			original_content = File.read(file_name)
 			Huffman.encode_file(file_name)

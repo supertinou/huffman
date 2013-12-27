@@ -18,7 +18,7 @@ module Huffman
 		txt = txt + EOT
 		log.info "=== Calcul des fréquences d'apparition des caractères du texte"
 		frequencies = LetterFrequency.get_frequencies(txt)
-		log.info "=== Creation de l'arbre de Huffman"
+		log.info "=== Creation de l'arbre de Huffman (Module 2)"
 		tree = Tree.new(frequencies)
 		log.info "=== Génération de l'image de l'arbre"
 		tree.display_as_png()
@@ -31,7 +31,7 @@ module Huffman
 	end
 
 	def decode_text(encoded_text,dictionnary)
-		log.info "=== Début du décodage du flux binaire de Huffman avec son dictionnaire"
+		log.info "=== Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)"
 		original_text = ''
 		buffer = ''
 		log.info "=== Décodage des bits"
@@ -78,8 +78,12 @@ module Huffman
 		original_size = File.size(file_path)
 		dictionnary_size = File.size(dictionnary_file_name)
 		encoded_size = File.size(encoded_file_name)
-		ratio =  (encoded_size + dictionnary_size) / ( original_size / 100 )
-
+		
+		begin
+			ratio =  (encoded_size + dictionnary_size) / ( original_size / 100 )
+		rescue ZeroDivisionError
+			ratio = 0
+		end
 		log.info "== Taille originale : #{original_size} octets"
 		log.info "== Taille du fichier binaire encodé : #{encoded_size} octets"
 		log.info "== Taille du fichier dictionnnaire : #{dictionnary_size} octets"

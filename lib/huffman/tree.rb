@@ -1,3 +1,4 @@
+require 'pqueue'
 require 'graphviz'
 
 module Huffman
@@ -11,21 +12,22 @@ module Huffman
 
 		def initialize(frequencies)
 			# Liste de noeuds feuilles toujours triés par ordre croissant qui vont nous permettre de créer l'arbre de Huffman
-			nodes = frequencies.map{|freq| Node.new(freq[1], freq[0])}
+			nodes = PQueue.new(frequencies.map{|freq| Node.new(freq[1], freq[0])}){ |node_a,node_b| node_a.value < node_b.value }
+			
 			# Penser aux Priority Queue
 			# Tant qu'il y'a pas plus qu'un seul noeud dans la liste
 			until nodes.size == 1
 				# 1) On créer un noeud dont ses fils sont les deux premiers noeuds du tableau triés de noeud et la valeur leur somme	
 				# On enlève les deux premiers noeuds
-				node1, node2 = nodes.shift, nodes.shift
+				node1, node2 = nodes.take(1).first, nodes.take(1).first
 				# On créer un noeud parent
 				parent = Node.new(node1.value+node2.value,nil,node1,node2)
 				# 2) On ajoute le noeud à la liste 
 				nodes << parent 
 				# On trie la liste
-				nodes = nodes.sort_by{|node| node.value}
+				#nodes = nodes.sort_by{|node| node.value}
 			end	
-			@root = nodes.first
+			@root = nodes.take(1).first
 			set_binary_values
 		end
 
