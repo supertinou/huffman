@@ -9,8 +9,8 @@ namespace :benchmark do
   task :encode_file do
     puts "Benchmark encode_file"
 
-    file_name = "data/miserables.txt" 
-    #file_name = "data/education.txt" 
+    #file_name = "data/miserables.txt" 
+    file_name = "data/education.txt" 
 
     puts "Nombre de symboles #{Huffman::LetterFrequency.get_frequencies(File.read(file_name)).count}"
 
@@ -41,8 +41,8 @@ namespace :benchmark do
     #profiler_tree = MethodProfiler.observe(Huffman::Tree)
     #profiler_node = MethodProfiler.observe(Huffman::Node)
 
-    #file_name = "data/miserables.txt" 
-    file_name = "data/education.txt" 
+    file_name = "data/miserables.txt" 
+    #file_name = "data/education.txt" 
 
     Benchmark.bm do |x|
       x.report("decode_file") { Huffman.decode_file(file_name+".huffman-encoded",file_name+".huffman-dictionnary")}

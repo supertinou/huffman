@@ -1,10 +1,12 @@
 # encoding: utf-8
 require 'active_support/all'
+require 'ruby-progressbar'
 require "huffman/version"
 require "huffman/letter_frequency"
 require "huffman/node"
 require "huffman/tree"
 require "huffman/log"
+
 
 module Huffman
 	# Caractère fin de transmission
@@ -28,7 +30,9 @@ module Huffman
 		log.info "=== Création du dictionnaire d'encodage"
 		dictionnary = tree.dictionnary
 		log.info "=== Creation du flux binaire de Huffman"
-		encoded_text = txt.each_char.map{|char| dictionnary.invert[char]}.join
+
+		progressbar = ProgressBar.create(:title => "Encodage du texte en flot binaire",  :total => txt.size, :format => '%t %p%% - %a |%b>>%i|')
+		encoded_text = txt.each_char.map{|char| progressbar.increment ; dictionnary.invert[char]}.join
 		log.info "=== Fin de l'encodage du texte"		 
 		return encoded_text, dictionnary
 	end
@@ -38,7 +42,11 @@ module Huffman
 		original_text = ''
 		buffer = ''
 		log.info "=== Décodage des bits"
+
+		progressbar = ProgressBar.create(:title => "Encodage du flot binaire en texte",  :total => encoded_text.size, :format => '%t %p%% - %a |%b>>%i|')
+
 		encoded_text.each_char do |byte| 
+			progressbar.increment
 			buffer += byte
 			# Si il y'a une correspondance
 			if dictionnary[buffer] 
