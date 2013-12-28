@@ -1,12 +1,11 @@
 # encoding: utf-8
 require 'active_support/all'
-require 'ruby-progressbar'
 require "huffman/version"
 require "huffman/letter_frequency"
+require "huffman/binary_stream"
 require "huffman/node"
 require "huffman/tree"
 require "huffman/log"
-
 
 module Huffman
 	# Caractère fin de transmission
@@ -15,9 +14,8 @@ module Huffman
 	extend self
 
 	def encode_text(txt, options={})
-
+		
 		options[:tree_picture] ||= false
-
 		# On ajoute le marqueur EOT (enf of transmission 003)
 		log.info "=== Début de l'encodage du texte"
 		txt = txt + EOT
@@ -29,36 +27,16 @@ module Huffman
 		tree.display_as_png() if options[:tree_picture]
 		log.info "=== Création du dictionnaire d'encodage"
 		dictionnary = tree.dictionnary
-		log.info "=== Creation du flux binaire de Huffman"
-
-		progressbar = ProgressBar.create(:title => "Encodage du texte en flot binaire",  :total => txt.size, :format => '%t %p%% - %a |%b>>%i|')
-		encoded_text = txt.each_char.map{|char| progressbar.increment ; dictionnary.invert[char]}.join
+		log.info "=== Encodage du texte en flot binaire"
+		encoded_text = BinaryStream.get_bits_from_text(txt,dictionnary)
 		log.info "=== Fin de l'encodage du texte"		 
 		return encoded_text, dictionnary
+	
 	end
 
 	def decode_text(encoded_text,dictionnary)
 		log.info "=== Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)"
-		original_text = ''
-		buffer = ''
-		log.info "=== Décodage des bits"
-
-		progressbar = ProgressBar.create(:title => "Encodage du flot binaire en texte",  :total => encoded_text.size, :format => '%t %p%% - %a |%b>>%i|')
-
-		encoded_text.each_char do |byte| 
-			progressbar.increment
-			buffer += byte
-			# Si il y'a une correspondance
-			if dictionnary[buffer] 
-				 # Si c'est le marqueur de fin EOF 
-			     return original_text if dictionnary[buffer] == EOT
-			    
-				 original_text += dictionnary[buffer] 
-				 buffer.clear
-			end
-		end
-		log.info "=== Fin du décodage"	
-		original_text
+		BinaryStream.get_text_from_bits(encoded_text,dictionnary)
 	end
 
 	def encode_file(file_path, options = {})
