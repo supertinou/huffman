@@ -12,7 +12,10 @@ module Huffman
 
 	extend self
 
-	def encode_text(txt)
+	def encode_text(txt, options={})
+
+		options[:tree_picture] ||= false
+
 		# On ajoute le marqueur EOT (enf of transmission 003)
 		log.info "=== Début de l'encodage du texte"
 		txt = txt + EOT
@@ -21,7 +24,7 @@ module Huffman
 		log.info "=== Creation de l'arbre de Huffman (Module 2)"
 		tree = Tree.new(frequencies)
 		log.info "=== Génération de l'image de l'arbre"
-		tree.display_as_png()
+		tree.display_as_png() if options[:tree_picture]
 		log.info "=== Création du dictionnaire d'encodage"
 		dictionnary = tree.dictionnary
 		log.info "=== Creation du flux binaire de Huffman"
@@ -50,10 +53,10 @@ module Huffman
 		original_text
 	end
 
-	def encode_file(file_path)
+	def encode_file(file_path, options = {})
 		log.info "= Début encodage du fichier #{file_path}"
 			
-		encoded_text, dictionnary = encode_text(File.read(file_path).encode('UTF-8', :invalid => :replace))	
+		encoded_text, dictionnary = encode_text(File.read(file_path).encode('UTF-8', :invalid => :replace),options)	
 		encoded_file_name =file_path+".huffman-encoded"
 	
 		
@@ -88,7 +91,7 @@ module Huffman
 		log.info "== Taille du fichier binaire encodé : #{encoded_size} octets"
 		log.info "== Taille du fichier dictionnnaire : #{dictionnary_size} octets"
 		
-		log.info "= Taux de compression = #{ratio}"
+		log.info "= Taux de compression = #{ratio} %"
 
 		nil
 	end

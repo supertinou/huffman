@@ -14,7 +14,6 @@ module Huffman
 			# Liste de noeuds feuilles toujours triés par ordre croissant qui vont nous permettre de créer l'arbre de Huffman
 			nodes = PQueue.new(frequencies.map{|freq| Node.new(freq[1], freq[0])}){ |node_a,node_b| node_a.value < node_b.value }
 			
-			# Penser aux Priority Queue
 			# Tant qu'il y'a pas plus qu'un seul noeud dans la liste
 			until nodes.size == 1
 				# 1) On créer un noeud dont ses fils sont les deux premiers noeuds du tableau triés de noeud et la valeur leur somme	
