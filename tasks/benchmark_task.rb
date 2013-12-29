@@ -15,11 +15,11 @@ namespace :benchmark do
   task :encode_file do
       
 
-          #benchmark_encode_file("data/ex1.txt") 
+        #benchmark_encode_file("data/ex1.txt") 
         #benchmark_encode_file("data/preambule_ddhc.txt")
         #benchmark_encode_file("data/ddhc.txt")  
         #benchmark_encode_file("data/miserables.txt")
-            #benchmark_encode_file("data/education.txt") 
+        #benchmark_encode_file("data/education.txt") 
         #benchmark_encode_file("data/125-symbols.txt" )
         #benchmark_encode_file("data/175-symbols.txt" )
         #benchmark_encode_file("data/210-symbols.txt" )

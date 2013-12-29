@@ -6,17 +6,16 @@ module Huffman
 
 		# Methodes délégués au noeud racine
 
-		delegate :visit, :to => :@root
-		delegate :visit_and_map, :to => :@root
-		delegate :set_binary_values, :to => :@root
+		delegate :visit,
+				 :visit_and_map,
+				 :set_binary_values, 
+				 :to => :@root
 
 		def initialize(frequencies)
 
 			# Liste de noeuds feuilles toujours triés par ordre croissant qui vont nous permettre de créer l'arbre de Huffman
-			nodes = PriorityQueue.new
+			nodes = PriorityQueue.new	
 
-			puts nodes.inspect
-			
 			frequencies.map{ |freq| nodes.push(Node.new(freq[1], freq[0]), freq[1]) }
 
 			# Tant qu'il y'a pas plus qu'un seul noeud dans la liste
