@@ -22,8 +22,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "method_profiler"
+
   spec.add_dependency "activesupport"
   spec.add_dependency "ruby-graphviz"
-  spec.add_dependency "pqueue"
+  spec.add_dependency "PriorityQueue"
   spec.add_dependency 'ruby-progressbar'
 end

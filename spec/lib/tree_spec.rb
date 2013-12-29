@@ -31,7 +31,9 @@ module Huffman
 
 			it "build and get the right dictionnary" do
 				dict = tree.dictionnary
-				expected_dict = {"00"=>"C", "01"=>"D", "100"=>"A", "101"=>"B", "11"=>"E"}
+
+				#expected_dict = {"00"=>"C", "01"=>"D", "100"=>"A", "101"=>"B", "11"=>"E"}
+				expected_dict = {"00"=>"C", "010"=>"A", "011"=>"B", "10"=>"D", "11"=>"E"}
 				dict.should == expected_dict
 			end
 		end

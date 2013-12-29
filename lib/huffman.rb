@@ -7,6 +7,7 @@ require "huffman/node"
 require "huffman/tree"
 require "huffman/log"
 
+
 module Huffman
 	# Caractère fin de transmission
 	EOT = 3.chr
