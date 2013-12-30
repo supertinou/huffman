@@ -29,14 +29,16 @@ module Huffman
 				nodes.push(parent, parent.value) 
 			end	
 			@root = nodes.delete_min.first
+
 		end
 
 		# On récupére la table de correspondance
 		def dictionnary
-			set_binary_values
-			# '001' => A
 			h = {}
-			visit(:postorder){|node| h[node.binary_value] = node.symbol if node.symbol }
+			set_binary_values{|node| h[node.binary_value] = node.symbol if node.symbol}
+			# Equivalent mais plus rapide que :
+			# set_binary_values 
+			# visit(:postorder){|node| h[node.binary_value] = node.symbol if node.symbol }
 			h
 		end
 

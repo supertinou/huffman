@@ -43,15 +43,18 @@ module Huffman
 	    	array
 	    end
 
-	    # Parcours les noeuds pour leur donner leur valeur binaire de Huffman
-	    def set_binary_values
+	    # Parcours les noeuds pour leur donner leur valeur binaire de Huffman 
+	    # Meut affecter une action sur chaque noeud grace au block
+	    def set_binary_values(&block)
 	    	if @left
 	    		@left.binary_value = @binary_value + '0'
-		        @left.set_binary_values
+		         yield @left if block_given?
+		        @left.set_binary_values(&block)
 		    end
 	    	if @right
 	    		@right.binary_value = @binary_value + '1'
-		        @right.set_binary_values
+		        yield @right if block_given?
+		        @right.set_binary_values(&block) 
 	    	end
 	    end
 

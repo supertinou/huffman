@@ -1720,3 +1720,518 @@
 29/12 19:37:11:786560: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
 29/12 19:37:16:522006: == Ecriture du fichier original
 29/12 19:37:16:522226: = Fin du décodage du fichier
+29/12 23:49:36:865243: = Decodage du fichier data/education.txt.huffman-encoded
+29/12 23:49:36:865750: == Restauration du dictionnaire de correspondance
+29/12 23:49:36:868586: == Lecture du flux binaire
+29/12 23:49:36:972350: == Décodage des bits en texte
+29/12 23:49:36:972489: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+29/12 23:50:10:594812: = Decodage du fichier data/education.txt.huffman-encoded
+29/12 23:50:10:594919: == Restauration du dictionnaire de correspondance
+29/12 23:50:10:595453: == Lecture du flux binaire
+29/12 23:50:10:685881: == Décodage des bits en texte
+29/12 23:50:10:686010: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+29/12 23:50:25:322893: = Decodage du fichier data/education.txt.huffman-encoded
+29/12 23:50:25:323001: == Restauration du dictionnaire de correspondance
+29/12 23:50:25:323559: == Lecture du flux binaire
+29/12 23:50:25:414676: == Décodage des bits en texte
+29/12 23:50:25:414824: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+29/12 23:51:49:924588: = Decodage du fichier data/education.txt.huffman-encoded
+29/12 23:51:49:924695: == Restauration du dictionnaire de correspondance
+29/12 23:51:49:925225: == Lecture du flux binaire
+29/12 23:51:50:015786: == Décodage des bits en texte
+29/12 23:51:50:015916: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+29/12 23:53:07:037486: = Decodage du fichier data/education.txt.huffman-encoded
+29/12 23:53:07:037592: == Restauration du dictionnaire de correspondance
+29/12 23:53:07:038126: == Lecture du flux binaire
+29/12 23:53:07:129446: == Décodage des bits en texte
+29/12 23:53:07:129583: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+29/12 23:53:18:612043: = Decodage du fichier data/education.txt.huffman-encoded
+29/12 23:53:18:612189: == Restauration du dictionnaire de correspondance
+29/12 23:53:18:612804: == Lecture du flux binaire
+29/12 23:53:18:712865: == Décodage des bits en texte
+29/12 23:53:18:713029: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 00:05:25:199109: === Début de l'encodage du texte
+30/12 00:05:25:199507: === Calcul des fréquences d'apparition des caractères du texte
+30/12 00:05:25:199609: === Creation de l'arbre de Huffman (Module 2)
+30/12 00:05:25:199829: === Génération de l'image de l'arbre
+30/12 00:05:25:199855: === Création du dictionnaire d'encodage
+30/12 00:05:25:199945: === Encodage du texte en flot binaire
+30/12 00:05:25:202015: === Fin de l'encodage du texte
+30/12 00:05:25:202053: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 00:05:25:209152: = Début encodage du fichier data/miserables.txt
+30/12 00:05:25:209590: === Début de l'encodage du texte
+30/12 00:05:25:209643: === Calcul des fréquences d'apparition des caractères du texte
+30/12 00:05:25:226551: === Creation de l'arbre de Huffman (Module 2)
+30/12 00:05:25:227185: === Génération de l'image de l'arbre
+30/12 00:05:25:227205: === Création du dictionnaire d'encodage
+30/12 00:05:25:227417: === Encodage du texte en flot binaire
+30/12 00:05:25:896566: === Fin de l'encodage du texte
+30/12 00:05:25:896673: == Ecriture du fichier binaire à partir du flux
+30/12 00:05:25:898591: == Ecriture du fichier dictionnaire de correspondance
+30/12 00:05:25:898776: == Fin encodage du fichier
+30/12 00:05:25:898844: == Taille originale : 43886 octets
+30/12 00:05:25:898875: == Taille du fichier binaire encodé : 23427 octets
+30/12 00:05:25:898900: == Taille du fichier dictionnnaire : 1091 octets
+30/12 00:05:25:898931: = Taux de compression = 55 %
+30/12 00:05:25:898964: = Decodage du fichier data/miserables.txt.huffman-encoded
+30/12 00:05:25:898988: == Restauration du dictionnaire de correspondance
+30/12 00:05:25:905821: == Lecture du flux binaire
+30/12 00:05:25:906924: == Décodage des bits en texte
+30/12 00:05:25:906971: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 00:05:31:095016: == Ecriture du fichier original
+30/12 00:05:31:095250: = Fin du décodage du fichier
+30/12 00:35:22:139751: = Début encodage du fichier data/miserables.txt
+30/12 00:35:22:140569: === Début de l'encodage du texte
+30/12 00:35:22:140644: === Calcul des fréquences d'apparition des caractères du texte
+30/12 00:35:22:157582: === Creation de l'arbre de Huffman (Module 2)
+30/12 00:35:22:158220: === Génération de l'image de l'arbre
+30/12 00:35:22:158240: === Création du dictionnaire d'encodage
+30/12 00:35:22:158444: === Encodage du texte en flot binaire
+30/12 00:35:22:808550: === Fin de l'encodage du texte
+30/12 00:35:22:808626: == Ecriture du fichier binaire à partir du flux
+30/12 00:35:22:810075: == Ecriture du fichier dictionnaire de correspondance
+30/12 00:35:22:810216: == Fin encodage du fichier
+30/12 00:35:22:810302: == Taille originale : 43886 octets
+30/12 00:35:22:810330: == Taille du fichier binaire encodé : 23427 octets
+30/12 00:35:22:810349: == Taille du fichier dictionnnaire : 1091 octets
+30/12 00:35:22:810368: = Taux de compression = 55 %
+30/12 00:35:22:810389: = Decodage du fichier data/miserables.txt.huffman-encoded
+30/12 00:35:22:810405: == Restauration du dictionnaire de correspondance
+30/12 00:35:22:817499: == Lecture du flux binaire
+30/12 00:35:22:818539: == Décodage des bits en texte
+30/12 00:35:22:818584: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 00:35:27:651976: == Ecriture du fichier original
+30/12 00:35:27:660875: = Fin du décodage du fichier
+30/12 00:35:27:672286: === Début de l'encodage du texte
+30/12 00:35:27:672368: === Calcul des fréquences d'apparition des caractères du texte
+30/12 00:35:27:672436: === Creation de l'arbre de Huffman (Module 2)
+30/12 00:35:27:672630: === Génération de l'image de l'arbre
+30/12 00:35:27:672661: === Création du dictionnaire d'encodage
+30/12 00:35:27:672746: === Encodage du texte en flot binaire
+30/12 00:35:27:675383: === Fin de l'encodage du texte
+30/12 00:35:27:675445: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 01:47:52:200738: === Début de l'encodage du texte
+30/12 01:47:52:201097: === Calcul des fréquences d'apparition des caractères du texte
+30/12 01:47:52:201190: === Creation de l'arbre de Huffman (Module 2)
+30/12 01:47:52:201430: === Génération de l'image de l'arbre
+30/12 01:47:52:201453: === Création du dictionnaire d'encodage
+30/12 01:47:52:201523: === Encodage du texte en flot binaire
+30/12 01:47:52:203676: === Fin de l'encodage du texte
+30/12 01:47:52:203734: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 01:47:52:209392: = Début encodage du fichier data/miserables.txt
+30/12 01:47:52:209750: === Début de l'encodage du texte
+30/12 01:47:52:209793: === Calcul des fréquences d'apparition des caractères du texte
+30/12 01:47:52:225475: === Creation de l'arbre de Huffman (Module 2)
+30/12 01:47:52:226167: === Génération de l'image de l'arbre
+30/12 01:47:52:226191: === Création du dictionnaire d'encodage
+30/12 01:47:52:226340: === Encodage du texte en flot binaire
+30/12 01:47:52:880871: === Fin de l'encodage du texte
+30/12 01:47:52:880936: == Ecriture du fichier binaire à partir du flux
+30/12 01:47:52:882052: == Ecriture du fichier dictionnaire de correspondance
+30/12 01:47:52:882211: == Fin encodage du fichier
+30/12 01:47:52:882273: == Taille originale : 43886 octets
+30/12 01:47:52:882293: == Taille du fichier binaire encodé : 23427 octets
+30/12 01:47:52:882309: == Taille du fichier dictionnnaire : 1091 octets
+30/12 01:47:52:882332: = Taux de compression = 55 %
+30/12 01:47:52:882348: = Decodage du fichier data/miserables.txt.huffman-encoded
+30/12 01:47:52:882361: == Restauration du dictionnaire de correspondance
+30/12 01:47:52:882774: == Lecture du flux binaire
+30/12 01:47:52:883290: == Décodage des bits en texte
+30/12 01:47:52:883313: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 01:47:57:726479: == Ecriture du fichier original
+30/12 01:47:57:726945: = Fin du décodage du fichier
+30/12 01:48:16:681273: = Début encodage du fichier data/255-symbols.txt
+30/12 01:48:16:681421: === Début de l'encodage du texte
+30/12 01:48:16:681489: === Calcul des fréquences d'apparition des caractères du texte
+30/12 01:48:16:681732: === Creation de l'arbre de Huffman (Module 2)
+30/12 01:48:16:857670: === Génération de l'image de l'arbre
+30/12 01:48:16:857763: === Création du dictionnaire d'encodage
+30/12 01:48:16:985580: === Encodage du texte en flot binaire
+30/12 01:48:16:990292: === Fin de l'encodage du texte
+30/12 01:48:16:990422: == Ecriture du fichier binaire à partir du flux
+30/12 01:48:16:990802: == Ecriture du fichier dictionnaire de correspondance
+30/12 01:48:16:990951: == Fin encodage du fichier
+30/12 01:48:16:991031: == Taille originale : 255 octets
+30/12 01:48:16:991105: == Taille du fichier binaire encodé : 256 octets
+30/12 01:48:16:991166: == Taille du fichier dictionnnaire : 2549 octets
+30/12 01:48:16:991224: = Taux de compression = 1402 %
+30/12 01:48:43:794659: = Début encodage du fichier data/255-symbols.txt
+30/12 01:48:43:794804: === Début de l'encodage du texte
+30/12 01:48:43:794871: === Calcul des fréquences d'apparition des caractères du texte
+30/12 01:48:43:795111: === Creation de l'arbre de Huffman (Module 2)
+30/12 01:48:43:971546: === Génération de l'image de l'arbre
+30/12 01:48:43:971639: === Création du dictionnaire d'encodage
+30/12 01:48:44:099583: === Encodage du texte en flot binaire
+30/12 01:48:44:103977: === Fin de l'encodage du texte
+30/12 01:48:44:104101: == Ecriture du fichier binaire à partir du flux
+30/12 01:48:44:105024: == Ecriture du fichier dictionnaire de correspondance
+30/12 01:48:44:105200: == Fin encodage du fichier
+30/12 01:48:44:105289: == Taille originale : 255 octets
+30/12 01:48:44:105356: == Taille du fichier binaire encodé : 256 octets
+30/12 01:48:44:105418: == Taille du fichier dictionnnaire : 2549 octets
+30/12 01:48:44:105479: = Taux de compression = 1402 %
+30/12 01:49:55:693161: = Début encodage du fichier data/255-symbols.txt
+30/12 01:49:55:693322: === Début de l'encodage du texte
+30/12 01:49:55:693396: === Calcul des fréquences d'apparition des caractères du texte
+30/12 01:49:55:693650: === Creation de l'arbre de Huffman (Module 2)
+30/12 01:49:55:841189: === Génération de l'image de l'arbre
+30/12 01:49:55:841289: === Création du dictionnaire d'encodage
+30/12 01:49:56:005479: === Encodage du texte en flot binaire
+30/12 01:49:56:009930: === Fin de l'encodage du texte
+30/12 01:49:56:010062: == Ecriture du fichier binaire à partir du flux
+30/12 01:49:56:010461: == Ecriture du fichier dictionnaire de correspondance
+30/12 01:49:56:010670: == Fin encodage du fichier
+30/12 01:49:56:010753: == Taille originale : 255 octets
+30/12 01:49:56:010833: == Taille du fichier binaire encodé : 256 octets
+30/12 01:49:56:010902: == Taille du fichier dictionnnaire : 2549 octets
+30/12 01:49:56:010972: = Taux de compression = 1402 %
+30/12 02:03:28:948224: === Début de l'encodage du texte
+30/12 02:03:28:948695: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:03:28:948800: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:03:28:949021: === Génération de l'image de l'arbre
+30/12 02:03:28:949044: === Création du dictionnaire d'encodage
+30/12 02:03:28:949130: === Encodage du texte en flot binaire
+30/12 02:03:28:951148: === Fin de l'encodage du texte
+30/12 02:03:28:951189: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 02:03:28:956648: = Début encodage du fichier data/miserables.txt
+30/12 02:03:28:956921: === Début de l'encodage du texte
+30/12 02:03:28:956958: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:03:28:972723: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:03:28:973348: === Génération de l'image de l'arbre
+30/12 02:03:28:973367: === Création du dictionnaire d'encodage
+30/12 02:03:28:973590: === Encodage du texte en flot binaire
+30/12 02:03:29:619600: === Fin de l'encodage du texte
+30/12 02:03:29:619664: == Ecriture du fichier binaire à partir du flux
+30/12 02:03:29:620753: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:03:29:620861: == Fin encodage du fichier
+30/12 02:03:29:620901: == Taille originale : 43886 octets
+30/12 02:03:29:620918: == Taille du fichier binaire encodé : 23427 octets
+30/12 02:03:29:620932: == Taille du fichier dictionnnaire : 1091 octets
+30/12 02:03:29:620946: = Taux de compression = 55 %
+30/12 02:03:29:620963: = Decodage du fichier data/miserables.txt.huffman-encoded
+30/12 02:03:29:620976: == Restauration du dictionnaire de correspondance
+30/12 02:03:29:628079: == Lecture du flux binaire
+30/12 02:03:29:629111: == Décodage des bits en texte
+30/12 02:03:29:629157: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 02:03:34:449810: == Ecriture du fichier original
+30/12 02:03:34:450032: = Fin du décodage du fichier
+30/12 02:03:38:808866: = Début encodage du fichier data/255-symbols.txt
+30/12 02:03:38:809030: === Début de l'encodage du texte
+30/12 02:03:38:809111: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:03:38:809371: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:03:38:944631: === Génération de l'image de l'arbre
+30/12 02:03:38:944734: === Création du dictionnaire d'encodage
+30/12 02:03:39:121422: === Encodage du texte en flot binaire
+30/12 02:03:39:126417: === Fin de l'encodage du texte
+30/12 02:03:39:126551: == Ecriture du fichier binaire à partir du flux
+30/12 02:03:39:126957: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:03:39:127115: == Fin encodage du fichier
+30/12 02:03:39:127199: == Taille originale : 255 octets
+30/12 02:03:39:127259: == Taille du fichier binaire encodé : 256 octets
+30/12 02:03:39:127316: == Taille du fichier dictionnnaire : 2549 octets
+30/12 02:03:39:127372: = Taux de compression = 1402 %
+30/12 02:04:00:500464: = Début encodage du fichier data/255-symbols.txt
+30/12 02:04:00:500628: === Début de l'encodage du texte
+30/12 02:04:00:500704: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:04:00:500957: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:04:00:648587: === Génération de l'image de l'arbre
+30/12 02:04:00:648686: === Création du dictionnaire d'encodage
+30/12 02:04:00:811988: === Encodage du texte en flot binaire
+30/12 02:04:00:816974: === Fin de l'encodage du texte
+30/12 02:04:00:817108: == Ecriture du fichier binaire à partir du flux
+30/12 02:04:00:817507: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:04:00:817665: == Fin encodage du fichier
+30/12 02:04:00:817749: == Taille originale : 255 octets
+30/12 02:04:00:817810: == Taille du fichier binaire encodé : 256 octets
+30/12 02:04:00:817868: == Taille du fichier dictionnnaire : 2549 octets
+30/12 02:04:00:817924: = Taux de compression = 1402 %
+30/12 02:04:42:149362: = Début encodage du fichier data/miserables.txt
+30/12 02:04:42:149578: === Début de l'encodage du texte
+30/12 02:04:42:149609: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:04:42:164846: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:04:42:165570: === Génération de l'image de l'arbre
+30/12 02:04:42:165598: === Création du dictionnaire d'encodage
+30/12 02:04:42:165693: === Encodage du texte en flot binaire
+30/12 02:04:42:846462: === Fin de l'encodage du texte
+30/12 02:04:42:846545: == Ecriture du fichier binaire à partir du flux
+30/12 02:04:42:846691: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:04:42:846758: == Fin encodage du fichier
+30/12 02:04:42:846794: == Taille originale : 43886 octets
+30/12 02:04:42:846811: == Taille du fichier binaire encodé : 0 octets
+30/12 02:04:42:846825: == Taille du fichier dictionnnaire : 0 octets
+30/12 02:04:42:846838: = Taux de compression = 0 %
+30/12 02:04:42:846852: = Decodage du fichier data/miserables.txt.huffman-encoded
+30/12 02:04:42:846863: == Restauration du dictionnaire de correspondance
+30/12 02:04:42:846899: == Lecture du flux binaire
+30/12 02:04:42:846948: == Décodage des bits en texte
+30/12 02:04:42:846965: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 02:04:42:847416: == Ecriture du fichier original
+30/12 02:04:42:847513: = Fin du décodage du fichier
+30/12 02:04:42:860915: === Début de l'encodage du texte
+30/12 02:04:42:860986: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:04:42:861056: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:04:42:861270: === Génération de l'image de l'arbre
+30/12 02:04:42:861292: === Création du dictionnaire d'encodage
+30/12 02:04:42:861335: === Encodage du texte en flot binaire
+30/12 02:04:42:863265: === Fin de l'encodage du texte
+30/12 02:04:42:863305: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 02:05:37:478736: = Début encodage du fichier data/miserables.txt
+30/12 02:05:37:478966: === Début de l'encodage du texte
+30/12 02:05:37:478992: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:05:37:494327: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:05:37:494983: === Génération de l'image de l'arbre
+30/12 02:05:37:495005: === Création du dictionnaire d'encodage
+30/12 02:05:37:495281: === Début de l'encodage du texte
+30/12 02:05:37:495317: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:05:37:495371: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:05:37:495528: === Génération de l'image de l'arbre
+30/12 02:05:37:495544: === Création du dictionnaire d'encodage
+30/12 02:06:45:175303: === Début de l'encodage du texte
+30/12 02:06:45:175366: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:06:45:175423: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:06:45:175602: === Génération de l'image de l'arbre
+30/12 02:06:45:175621: === Création du dictionnaire d'encodage
+30/12 02:06:45:176010: = Début encodage du fichier data/miserables.txt
+30/12 02:06:45:176215: === Début de l'encodage du texte
+30/12 02:06:45:176241: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:06:45:191468: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:06:45:192125: === Génération de l'image de l'arbre
+30/12 02:06:45:192145: === Création du dictionnaire d'encodage
+30/12 02:07:14:298274: = Début encodage du fichier data/miserables.txt
+30/12 02:07:14:298487: === Début de l'encodage du texte
+30/12 02:07:14:298521: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:07:14:313675: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:07:14:314308: === Génération de l'image de l'arbre
+30/12 02:07:14:314333: === Création du dictionnaire d'encodage
+30/12 02:07:14:314542: === Encodage du texte en flot binaire
+30/12 02:07:14:991848: === Fin de l'encodage du texte
+30/12 02:07:14:991938: == Ecriture du fichier binaire à partir du flux
+30/12 02:07:14:993412: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:07:14:993551: == Fin encodage du fichier
+30/12 02:07:14:993605: == Taille originale : 43886 octets
+30/12 02:07:14:993628: == Taille du fichier binaire encodé : 23427 octets
+30/12 02:07:14:993647: == Taille du fichier dictionnnaire : 1091 octets
+30/12 02:07:14:993664: = Taux de compression = 55 %
+30/12 02:07:14:993684: = Decodage du fichier data/miserables.txt.huffman-encoded
+30/12 02:07:14:993700: == Restauration du dictionnaire de correspondance
+30/12 02:07:15:000762: == Lecture du flux binaire
+30/12 02:07:15:001750: == Décodage des bits en texte
+30/12 02:07:15:001797: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 02:07:20:065354: == Ecriture du fichier original
+30/12 02:07:20:073854: = Fin du décodage du fichier
+30/12 02:07:20:074705: === Début de l'encodage du texte
+30/12 02:07:20:074805: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:07:20:074953: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:07:20:075202: === Génération de l'image de l'arbre
+30/12 02:07:20:075226: === Création du dictionnaire d'encodage
+30/12 02:07:20:075291: === Encodage du texte en flot binaire
+30/12 02:07:20:077786: === Fin de l'encodage du texte
+30/12 02:07:20:077841: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 02:07:25:464025: = Début encodage du fichier data/255-symbols.txt
+30/12 02:07:25:464186: === Début de l'encodage du texte
+30/12 02:07:25:464261: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:07:25:464516: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:07:25:603672: === Génération de l'image de l'arbre
+30/12 02:07:25:603774: === Création du dictionnaire d'encodage
+30/12 02:07:25:688597: === Encodage du texte en flot binaire
+30/12 02:07:25:693439: === Fin de l'encodage du texte
+30/12 02:07:25:693581: == Ecriture du fichier binaire à partir du flux
+30/12 02:07:25:694086: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:07:25:694257: == Fin encodage du fichier
+30/12 02:07:25:694339: == Taille originale : 255 octets
+30/12 02:07:25:694398: == Taille du fichier binaire encodé : 256 octets
+30/12 02:07:25:694454: == Taille du fichier dictionnnaire : 2549 octets
+30/12 02:07:25:694508: = Taux de compression = 1402 %
+30/12 02:07:34:736503: = Début encodage du fichier data/255-symbols.txt
+30/12 02:07:34:736665: === Début de l'encodage du texte
+30/12 02:07:34:736743: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:07:34:736998: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:07:34:881383: === Génération de l'image de l'arbre
+30/12 02:07:34:881489: === Création du dictionnaire d'encodage
+30/12 02:07:34:967144: === Encodage du texte en flot binaire
+30/12 02:07:34:972166: === Fin de l'encodage du texte
+30/12 02:07:34:972302: == Ecriture du fichier binaire à partir du flux
+30/12 02:07:34:972802: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:07:34:972966: == Fin encodage du fichier
+30/12 02:07:34:973048: == Taille originale : 255 octets
+30/12 02:07:34:973109: == Taille du fichier binaire encodé : 256 octets
+30/12 02:07:34:973166: == Taille du fichier dictionnnaire : 2549 octets
+30/12 02:07:34:973220: = Taux de compression = 1402 %
+30/12 02:08:25:261821: = Début encodage du fichier data/255-symbols.txt
+30/12 02:08:25:261965: === Début de l'encodage du texte
+30/12 02:08:25:262034: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:08:25:262284: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:08:25:412501: === Génération de l'image de l'arbre
+30/12 02:08:25:412600: === Création du dictionnaire d'encodage
+30/12 02:08:25:496917: === Encodage du texte en flot binaire
+30/12 02:08:25:501783: === Fin de l'encodage du texte
+30/12 02:08:25:501916: == Ecriture du fichier binaire à partir du flux
+30/12 02:08:25:502418: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:08:25:502566: == Fin encodage du fichier
+30/12 02:08:25:502646: == Taille originale : 255 octets
+30/12 02:08:25:502705: == Taille du fichier binaire encodé : 256 octets
+30/12 02:08:25:502760: == Taille du fichier dictionnnaire : 2549 octets
+30/12 02:08:25:502815: = Taux de compression = 1402 %
+30/12 02:09:17:817896: = Début encodage du fichier data/255-symbols.txt
+30/12 02:09:17:818040: === Début de l'encodage du texte
+30/12 02:09:17:818110: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:09:17:818356: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:09:17:960348: === Génération de l'image de l'arbre
+30/12 02:09:17:960449: === Création du dictionnaire d'encodage
+30/12 02:09:58:294187: = Début encodage du fichier data/255-symbols.txt
+30/12 02:09:58:294376: === Début de l'encodage du texte
+30/12 02:09:58:294454: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:09:58:294708: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:09:58:431062: === Génération de l'image de l'arbre
+30/12 02:09:58:431167: === Création du dictionnaire d'encodage
+30/12 02:09:58:598993: === Encodage du texte en flot binaire
+30/12 02:09:58:603614: === Fin de l'encodage du texte
+30/12 02:09:58:603752: == Ecriture du fichier binaire à partir du flux
+30/12 02:09:58:604179: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:09:58:604341: == Fin encodage du fichier
+30/12 02:09:58:604426: == Taille originale : 255 octets
+30/12 02:09:58:604487: == Taille du fichier binaire encodé : 256 octets
+30/12 02:09:58:604546: == Taille du fichier dictionnnaire : 2549 octets
+30/12 02:09:58:604603: = Taux de compression = 1402 %
+30/12 02:10:12:003946: = Début encodage du fichier data/255-symbols.txt
+30/12 02:10:12:004092: === Début de l'encodage du texte
+30/12 02:10:12:004159: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:10:12:004408: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:10:12:138344: === Génération de l'image de l'arbre
+30/12 02:10:12:138449: === Création du dictionnaire d'encodage
+30/12 02:10:12:307220: === Encodage du texte en flot binaire
+30/12 02:10:12:311933: === Fin de l'encodage du texte
+30/12 02:10:12:312057: == Ecriture du fichier binaire à partir du flux
+30/12 02:10:12:312422: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:10:12:312565: == Fin encodage du fichier
+30/12 02:10:12:312643: == Taille originale : 255 octets
+30/12 02:10:12:312702: == Taille du fichier binaire encodé : 256 octets
+30/12 02:10:12:312757: == Taille du fichier dictionnnaire : 2549 octets
+30/12 02:10:12:312811: = Taux de compression = 1402 %
+30/12 02:10:42:052470: = Début encodage du fichier data/255-symbols.txt
+30/12 02:10:42:052619: === Début de l'encodage du texte
+30/12 02:10:42:052688: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:10:42:052935: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:10:42:201420: === Génération de l'image de l'arbre
+30/12 02:10:42:201525: === Création du dictionnaire d'encodage
+30/12 02:10:42:288531: === Encodage du texte en flot binaire
+30/12 02:10:42:293390: === Fin de l'encodage du texte
+30/12 02:10:42:293518: == Ecriture du fichier binaire à partir du flux
+30/12 02:10:42:293996: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:10:42:294141: == Fin encodage du fichier
+30/12 02:10:42:294220: == Taille originale : 255 octets
+30/12 02:10:42:294279: == Taille du fichier binaire encodé : 256 octets
+30/12 02:10:42:294336: == Taille du fichier dictionnnaire : 2549 octets
+30/12 02:10:42:294426: = Taux de compression = 1402 %
+30/12 02:10:47:973479: = Début encodage du fichier data/255-symbols.txt
+30/12 02:10:47:973626: === Début de l'encodage du texte
+30/12 02:10:47:973693: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:10:47:973936: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:10:48:108732: === Génération de l'image de l'arbre
+30/12 02:10:48:108832: === Création du dictionnaire d'encodage
+30/12 02:10:48:201202: === Encodage du texte en flot binaire
+30/12 02:10:48:206214: === Fin de l'encodage du texte
+30/12 02:10:48:206370: == Ecriture du fichier binaire à partir du flux
+30/12 02:10:48:206930: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:10:48:207118: == Fin encodage du fichier
+30/12 02:10:48:207218: == Taille originale : 255 octets
+30/12 02:10:48:207278: == Taille du fichier binaire encodé : 256 octets
+30/12 02:10:48:207333: == Taille du fichier dictionnnaire : 2549 octets
+30/12 02:10:48:207420: = Taux de compression = 1402 %
+30/12 02:11:38:422849: = Début encodage du fichier data/255-symbols.txt
+30/12 02:11:38:422999: === Début de l'encodage du texte
+30/12 02:11:38:423069: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:11:38:423354: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:11:38:569729: === Génération de l'image de l'arbre
+30/12 02:11:38:569838: === Création du dictionnaire d'encodage
+30/12 02:11:38:653588: === Encodage du texte en flot binaire
+30/12 02:11:38:658234: === Fin de l'encodage du texte
+30/12 02:11:38:658367: == Ecriture du fichier binaire à partir du flux
+30/12 02:11:38:658860: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:11:38:659031: == Fin encodage du fichier
+30/12 02:11:38:659113: == Taille originale : 255 octets
+30/12 02:11:38:659173: == Taille du fichier binaire encodé : 256 octets
+30/12 02:11:38:659228: == Taille du fichier dictionnnaire : 2549 octets
+30/12 02:11:38:659319: = Taux de compression = 1402 %
+30/12 02:12:17:260497: = Début encodage du fichier data/125-symbols.txt
+30/12 02:12:17:260671: === Début de l'encodage du texte
+30/12 02:12:17:260751: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:12:17:260950: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:12:17:327078: === Génération de l'image de l'arbre
+30/12 02:12:17:327223: === Création du dictionnaire d'encodage
+30/12 02:12:17:412207: === Encodage du texte en flot binaire
+30/12 02:12:17:415261: === Fin de l'encodage du texte
+30/12 02:12:17:415466: == Ecriture du fichier binaire à partir du flux
+30/12 02:12:17:416177: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:12:17:416334: == Fin encodage du fichier
+30/12 02:12:17:416422: == Taille originale : 125 octets
+30/12 02:12:17:416487: == Taille du fichier binaire encodé : 110 octets
+30/12 02:12:17:416548: == Taille du fichier dictionnnaire : 1122 octets
+30/12 02:12:17:416606: = Taux de compression = 1232 %
+30/12 02:12:42:161836: = Début encodage du fichier data/125-symbols.txt
+30/12 02:12:42:162025: === Début de l'encodage du texte
+30/12 02:12:42:162135: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:12:42:162370: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:12:42:217800: === Génération de l'image de l'arbre
+30/12 02:12:42:217906: === Création du dictionnaire d'encodage
+30/12 02:12:42:300829: === Encodage du texte en flot binaire
+30/12 02:12:42:303764: === Fin de l'encodage du texte
+30/12 02:12:42:303893: == Ecriture du fichier binaire à partir du flux
+30/12 02:12:42:304215: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:12:42:304364: == Fin encodage du fichier
+30/12 02:12:42:304448: == Taille originale : 125 octets
+30/12 02:12:42:304512: == Taille du fichier binaire encodé : 110 octets
+30/12 02:12:42:304572: == Taille du fichier dictionnnaire : 1122 octets
+30/12 02:12:42:304630: = Taux de compression = 1232 %
+30/12 02:33:40:367869: === Début de l'encodage du texte
+30/12 02:33:40:368582: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:33:40:368693: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:33:40:368904: === Génération de l'image de l'arbre
+30/12 02:33:40:368925: === Création du dictionnaire d'encodage
+30/12 02:33:40:370086: = Début encodage du fichier data/miserables.txt
+30/12 02:33:40:370318: === Début de l'encodage du texte
+30/12 02:33:40:370355: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:33:40:388283: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:33:40:389014: === Génération de l'image de l'arbre
+30/12 02:33:40:389048: === Création du dictionnaire d'encodage
+30/12 02:34:11:575244: === Début de l'encodage du texte
+30/12 02:34:11:575311: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:34:11:575371: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:34:11:575542: === Génération de l'image de l'arbre
+30/12 02:34:11:575562: === Création du dictionnaire d'encodage
+30/12 02:34:11:575962: = Début encodage du fichier data/miserables.txt
+30/12 02:34:11:576144: === Début de l'encodage du texte
+30/12 02:34:11:576171: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:34:11:591389: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:34:11:592005: === Génération de l'image de l'arbre
+30/12 02:34:11:592027: === Création du dictionnaire d'encodage
+30/12 02:34:39:588383: = Début encodage du fichier data/miserables.txt
+30/12 02:34:39:588596: === Début de l'encodage du texte
+30/12 02:34:39:588622: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:34:39:604208: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:34:39:604860: === Génération de l'image de l'arbre
+30/12 02:34:39:604882: === Création du dictionnaire d'encodage
+30/12 02:34:39:605026: === Encodage du texte en flot binaire
+30/12 02:34:40:338867: === Fin de l'encodage du texte
+30/12 02:34:40:338929: == Ecriture du fichier binaire à partir du flux
+30/12 02:34:40:340076: == Ecriture du fichier dictionnaire de correspondance
+30/12 02:34:40:340187: == Fin encodage du fichier
+30/12 02:34:40:340241: == Taille originale : 43886 octets
+30/12 02:34:40:340261: == Taille du fichier binaire encodé : 23427 octets
+30/12 02:34:40:340277: == Taille du fichier dictionnnaire : 1091 octets
+30/12 02:34:40:340292: = Taux de compression = 55 %
+30/12 02:34:40:340318: = Decodage du fichier data/miserables.txt.huffman-encoded
+30/12 02:34:40:340331: == Restauration du dictionnaire de correspondance
+30/12 02:34:40:340803: == Lecture du flux binaire
+30/12 02:34:40:341292: == Décodage des bits en texte
+30/12 02:34:40:341313: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
+30/12 02:34:45:664828: == Ecriture du fichier original
+30/12 02:34:45:672843: = Fin du décodage du fichier
+30/12 02:34:45:673652: === Début de l'encodage du texte
+30/12 02:34:45:673725: === Calcul des fréquences d'apparition des caractères du texte
+30/12 02:34:45:673834: === Creation de l'arbre de Huffman (Module 2)
+30/12 02:34:45:674157: === Génération de l'image de l'arbre
+30/12 02:34:45:674190: === Création du dictionnaire d'encodage
+30/12 02:34:45:674284: === Encodage du texte en flot binaire
+30/12 02:34:45:677345: === Fin de l'encodage du texte
+30/12 02:34:45:677399: === Début du décodage du flux binaire de Huffman avec son dictionnaire (Module 3)
