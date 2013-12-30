@@ -44,20 +44,17 @@ module Huffman
 	    end
 
 	    # Parcours les noeuds pour leur donner leur valeur binaire de Huffman 
-	    # Meut affecter une action sur chaque noeud grace au block
+	    # Peut invoquer une action sur chaque noeud visité
+
 	    def set_binary_values(&block)
-	    	if @left
-	    		@left.binary_value = @binary_value + '0'
-		         yield @left if block_given?
-		        @left.set_binary_values(&block)
-		    end
-	    	if @right
-	    		@right.binary_value = @binary_value + '1'
-		        yield @right if block_given?
-		        @right.set_binary_values(&block) 
+	    	[@left,@right].each_with_index do |node,bit_value| 
+	    		if node
+	    			node.binary_value = @binary_value + bit_value.to_s
+		        	yield node if block_given?
+		       		node.set_binary_values(&block)
+	    		end
 	    	end
 	    end
-
 
 	    def leaf?
 	    	(not @left and not @right)

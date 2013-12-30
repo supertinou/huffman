@@ -1,5 +1,6 @@
 ![Arbre binaire](http://www.mathworks.com/matlabcentral/fx_files/33212/1/huffman.png)
 
+[![Code Climate](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/badges/adbbcd5f91fb73caf186/gpa.png)](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/feed)
 
 # La gem Huffman
 
