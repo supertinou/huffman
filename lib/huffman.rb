@@ -26,10 +26,10 @@ module Huffman
 		frequencies = LetterFrequency.get_frequencies(txt)
 		log.info "=== Creation de l'arbre de Huffman (Module 2)"
 		tree = Tree.new(frequencies)
-		log.info "=== Génération de l'image de l'arbre"
-		tree.display_as_png(options[:tree_path]) if options[:tree_picture]
 		log.info "=== Création du dictionnaire d'encodage"
 		dictionnary = tree.dictionnary
+		log.info "=== Génération de l'image de l'arbre"
+		tree.display_as_png(options[:tree_path]) if options[:tree_picture]
 		log.info "=== Encodage du texte en flot binaire"
 		encoded_text = BinaryStream.get_bits_from_text(txt,dictionnary)
 		log.info "=== Fin de l'encodage du texte"		 
