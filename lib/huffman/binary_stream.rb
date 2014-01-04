@@ -12,8 +12,7 @@ module Huffman
 		end
 
 		def get_text_from_bits(bits,dictionnary)
-			original_text = ''
-			buffer = ''
+			original_text = '' ; buffer = ''
 			progressbar = ProgressBar.create(:title => "Encodage du flot binaire en texte",  :total => bits.size, :format => '%t %p%% - %a |%b>>%i|')
 			bits.each_char do |bit| 
 				progressbar.increment
