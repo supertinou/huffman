@@ -59,6 +59,7 @@ private
     puts "Taille : #{File.size(file_name)}"
     puts "Nombre de symboles #{Huffman::LetterFrequency.get_frequencies(File.read(file_name)).count}"
 
+    profiler_file = MethodProfiler.observe(File)
     profiler_huffman = MethodProfiler.observe(Huffman)
     profiler_pq = MethodProfiler.observe(PriorityQueue)
     profiler_letter_frequency = MethodProfiler.observe(Huffman::LetterFrequency)
@@ -67,7 +68,7 @@ private
     profiler_binary_stream = MethodProfiler.observe(Huffman::BinaryStream)
 
 
-    Huffman.encode_file(file_name) 
+    Huffman.encode_file(file_name, tree_picture: true) 
 
     
     puts profiler_huffman.report.sort_by(:average_time).order(:ascending)
@@ -76,6 +77,7 @@ private
     puts profiler_binary_stream.report.sort_by(:average_time).order(:ascending)
     puts profiler_tree.report.sort_by(:average_time).order(:ascending)
     puts profiler_node.report.sort_by(:average_time).order(:ascending)
+    puts profiler_file.report.sort_by(:average_time).order(:ascending)
   end 
 
 

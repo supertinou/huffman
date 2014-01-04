@@ -17,6 +17,8 @@ module Huffman
 	def encode_text(txt, options={})
 		
 		options[:tree_picture] ||= false
+		options[:tree_path] ||= "tree"
+
 		# On ajoute le marqueur EOT (enf of transmission 003)
 		log.info "=== Début de l'encodage du texte"
 		txt = txt + EOT
@@ -25,7 +27,7 @@ module Huffman
 		log.info "=== Creation de l'arbre de Huffman (Module 2)"
 		tree = Tree.new(frequencies)
 		log.info "=== Génération de l'image de l'arbre"
-		tree.display_as_png() if options[:tree_picture]
+		tree.display_as_png(options[:tree_path]) if options[:tree_picture]
 		log.info "=== Création du dictionnaire d'encodage"
 		dictionnary = tree.dictionnary
 		log.info "=== Encodage du texte en flot binaire"
@@ -42,24 +44,21 @@ module Huffman
 
 	def encode_file(file_path, options = {})
 		log.info "= Début encodage du fichier #{file_path}"
-			
+		
+		options[:tree_path] ||= file_path
 		encoded_text, dictionnary = encode_text(File.read(file_path).encode('UTF-8', :invalid => :replace),options)	
 		encoded_file_name =file_path+".huffman-encoded"
 	
 		
 		log.info "== Ecriture du fichier binaire à partir du flux"
-		File.open(encoded_file_name, 'wb' ) do |output|
-		  output.write [encoded_text].pack("B*")
-		end
+		File.open(encoded_file_name, 'wb' ){|f| f.write [encoded_text].pack("B*") }
 
 		# Bits et caractère sont séparés par des tabulations
 		dictionnary_stream = dictionnary.collect { |bin, char| bin+"\t"+char }.join('')
 
 		log.info "== Ecriture du fichier dictionnaire de correspondance"
 		dictionnary_file_name = file_path+".huffman-dictionnary"
-		File.open(dictionnary_file_name, 'wb' ) do |output|
-		  output.write dictionnary_stream
-		end
+		File.open(dictionnary_file_name, 'wb' ){|f| f.write dictionnary_stream }
 		
 
 		log.info "== Fin encodage du fichier"
@@ -74,6 +73,7 @@ module Huffman
 		rescue ZeroDivisionError
 			ratio = 0
 		end
+
 		log.info "== Taille originale : #{original_size} octets"
 		log.info "== Taille du fichier binaire encodé : #{encoded_size} octets"
 		log.info "== Taille du fichier dictionnnaire : #{dictionnary_size} octets"
@@ -107,9 +107,7 @@ module Huffman
 		log.info "== Décodage des bits en texte"
 		original_text = decode_text(encoded_text,dictionnary)
 		log.info "== Ecriture du fichier original"
-		File.open(file_path+"-back-to-original", 'wb' ) do |output|
-		  output.write original_text
-		end
+		File.open(file_path+"-back-to-original", 'wb' ){|f| f.write original_text }
 		log.info "= Fin du décodage du fichier"
 		nil
 	end

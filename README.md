@@ -30,6 +30,7 @@ Encoder un texte :
 
 ```ruby
 Huffman.encode_text(txt) # return text_encoded, dictionnary
+Huffman.encode_text(txt,{tree_picture: true, tree_path: "my_tree"}) # return text_encoded, dictionnary and build a png tree picture
 ```
 
     
@@ -41,6 +42,7 @@ Huffman.decode_text(txt_encoded, dictionnary) # return text_decoded
 Encoder un fichier texte :
 ```ruby
 Huffman.encode_file(file_name) # write a file_name.huffman-encoded file and a file_name.huffman-dictionnary
+Huffman.encode_file(file_name,tree_picture: true) # write a file_name.huffman-encoded file and a file_name.huffman-dictionnary and generate a png tree picture
 ```
 
 Décoder un fichier texte :
