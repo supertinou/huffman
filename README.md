@@ -1,70 +1,77 @@
 ![Arbre binaire](http://www.mathworks.com/matlabcentral/fx_files/33212/1/huffman.png)
 
-[![Code Climate](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/badges/adbbcd5f91fb73caf186/gpa.png)](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/feed)[![Build Status](https://travis-ci.org/lagrangemartin/huffman.png?branch=master)](https://travis-ci.org/lagrangemartin/huffman)
+[![Code Climate](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/badges/adbbcd5f91fb73caf186/gpa.png)](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/feed) [![Build Status](https://travis-ci.org/lagrangemartin/huffman.png?branch=master)](https://travis-ci.org/lagrangemartin/huffman)
 
-# La gem Huffman
+# The Huffman gem
 
-Cette gem permet de compresser et décompresser du texte en utilisant l'encodage de Huffman.
-Elle a aussi un but pédagogique car elle permet de visualiser l'arbre de Huffman généré.
+This gem allow you to encode and decode a text using the Huffman encoding compression algorithm.
+It could also generate and visualize the huffman tree as a png file.
 
-## Installation
+## Setup
 
+-Add this line to your application's Gemfile:
 Ajoutez cette ligne à votre Gemfile :
 
 ```ruby
 gem 'huffman'
 ```
 
-Et executez :
+-And then execute:
 
     $ bundle
 
-Ou installez la indépendamment :
+-Or install it yourself as:
 
     $ gem install huffman
 
-## Utilisation
+
+-Install graphviz if you want to be able to visualize trees.
+
+## Usage
 
 
-Encoder un texte :
+Encode a text :
 
 ```ruby
 Huffman.encode_text(txt) # return text_encoded, dictionnary
-Huffman.encode_text(txt,{tree_picture: true, tree_path: "my_tree"}) # return text_encoded, dictionnary and build a png tree picture
+Huffman.encode_text(txt) # return text_encoded, dictionnary
 ```
 
     
-Décoder un texte :
+Decode a text :
 ```ruby
-Huffman.decode_text(txt_encoded, dictionnary) # return text_decoded
+Huffman.decode_text(encoded_txt, dictionnary) # return decoded_text
 ```
 
-Encoder un fichier texte :
+Encode a text file
 ```ruby
 Huffman.encode_file(file_name) # write a file_name.huffman-encoded file and a file_name.huffman-dictionnary
-Huffman.encode_file(file_name,{tree_picture: true, tree_path: "my_tree"}) # write a file_name.huffman-encoded file and a file_name.huffman-dictionnary and generate a png tree picture
+Huffman.encode_file(file_name) # write a file_name.huffman-encoded file and a file_name.huffman-dictionnary
 ```
 
-Décoder un fichier texte :
+Decode a text file :
 ```ruby
-Huffman.decode_file(huffman_encoded_file,huffman-dictionnary) # write a huffman-encoded-back-to-original file
+Huffman.decode_file(huffman_encoded_file_path,huffman-dictionnary_path) # write a huffman-encoded-back-to-original file
 ```
 
-## Specifications
 
-Executez cette commande pour consulter les spécifications
+## Generate a Huffman tree
 
-    $ rake
+This gem give you the ability to generate and visualize the huffman tree.
+You have to install graphviz before.
 
+All you need to do is to optionally add some options to the encode_file and decode_file method :
 
-## Génération de l'arbre de Huffman
+{tree_picture: true, tree_path: "my_tree"}
 
-La gem permet de générer la visualisation de l'arbre de Huffman.
-Pour celà, vous devez installer graphviz 
+like :
 
+```ruby
+Huffman.encode_text(txt, tree_picture: true, tree_path: "my_trees/the_tree")     # or
+Huffman.encode_file(file_name, tree_picture: true, tree_path: "my_trees/the_tree") 
+```
 
-
-## Contribuer à cette gem
+## Contributing
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
