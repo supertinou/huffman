@@ -1,11 +1,11 @@
-![Arbre binaire](http://www.mathworks.com/matlabcentral/fx_files/33212/1/huffman.png)
+![Huffman](http://www.mathworks.com/matlabcentral/fx_files/33212/1/huffman.png)
 
 [![Code Climate](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/badges/adbbcd5f91fb73caf186/gpa.png)](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/feed) [![Build Status](https://travis-ci.org/lagrangemartin/huffman.png?branch=master)](https://travis-ci.org/lagrangemartin/huffman)
 
 # The Huffman gem
 
 This gem allow you to encode and decode a text using the Huffman encoding compression algorithm.
-It could also generate and visualize the huffman tree as a png file.
+It can also generate and visualize the huffman tree as a png file.
 
 ## Setup
 
@@ -57,14 +57,14 @@ Huffman.decode_file(huffman_encoded_file_path,huffman-dictionnary_path) # write 
 
 ## Generate a Huffman tree
 
+![Huffman tree](http://img15.hostingpics.net/pics/575352tree.png)
+
+
 This gem give you the ability to generate and visualize the huffman tree.
 You have to install graphviz before.
 
 All you need to do is to optionally add some options to the encode_file and decode_file method :
 
-{tree_picture: true, tree_path: "my_tree"}
-
-like :
 
 ```ruby
 Huffman.encode_text(txt, tree_picture: true, tree_path: "my_trees/the_tree")     # or
