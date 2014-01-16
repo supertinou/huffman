@@ -1,6 +1,6 @@
 ![Arbre binaire](http://www.mathworks.com/matlabcentral/fx_files/33212/1/huffman.png)
 
-[![Code Climate](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/badges/adbbcd5f91fb73caf186/gpa.png)](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/feed)
+[![Code Climate](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/badges/adbbcd5f91fb73caf186/gpa.png)](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/feed)[![Build Status](https://travis-ci.org/lagrangemartin/huffman.png?branch=master)](https://travis-ci.org/lagrangemartin/huffman)
 
 # La gem Huffman
 
@@ -57,9 +57,10 @@ Executez cette commande pour consulter les spécifications
     $ rake
 
 
-## Génération d'arbre
+## Génération de l'arbre de Huffman
 
-La gem permet de générer la visualisation de l'arbre de Huffman 
+La gem permet de générer la visualisation de l'arbre de Huffman.
+Pour celà, vous devez installer graphviz 
 
 
 
