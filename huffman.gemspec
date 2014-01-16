@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "huffman"
   spec.version       = Huffman::VERSION
   spec.authors       = ["Martin Lagrange", "Bastien Jorge"]
-  spec.email         = ["lagrangemartin@gmail.com", "bastien.jorge@utt.fr"]
+  spec.email         = ["lagrangemartin@gmail.com", "bastien.jorge@gmail.com"]
   spec.summary       = %q{Algorithme de Huffman}
   spec.description   = %q{Algorithme de Huffman}
   spec.homepage      = ""
@@ -21,12 +21,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
-  spec.add_development_dependency "method_profiler"
-  spec.add_development_dependency "simplecov"
 
   spec.add_dependency "activesupport"
   spec.add_dependency "ruby-graphviz"
   spec.add_dependency "PriorityQueue"
-  spec.add_dependency 'ruby-progressbar'
 
 end

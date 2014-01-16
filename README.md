@@ -42,7 +42,7 @@ Huffman.decode_text(txt_encoded, dictionnary) # return text_decoded
 Encoder un fichier texte :
 ```ruby
 Huffman.encode_file(file_name) # write a file_name.huffman-encoded file and a file_name.huffman-dictionnary
-Huffman.encode_file(file_name,tree_picture: true) # write a file_name.huffman-encoded file and a file_name.huffman-dictionnary and generate a png tree picture
+Huffman.encode_file(file_name,{tree_picture: true, tree_path: "my_tree"}) # write a file_name.huffman-encoded file and a file_name.huffman-dictionnary and generate a png tree picture
 ```
 
 Décoder un fichier texte :
@@ -56,48 +56,11 @@ Executez cette commande pour consulter les spécifications
 
     $ rake
 
-## Les différents parcours d'un arbre binaire 
 
-![Arbre binaire](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Arbre_binaire_ordonne.svg/408px-Arbre_binaire_ordonne.svg.png)
+## Génération d'arbre
 
+La gem permet de générer la visualisation de l'arbre de Huffman 
 
-
-
-<table>
-  <tr>
-    <th>Parcours</th>
-    <th>Fonction de visite</th>
-    <th>Résultat</th>
-  </tr>
-  <tr>
-    <td>Préfixe (Preorder) </td>
-    <td>
-        lire noeud <br />
-        visiter gauche <br />
-        visiter droite
-    </td>
-    <td>1, 2, 4, 5, 7, 8, 3, 6, 9</td>
-  </tr>
-  <tr>
-    <td>Infixe (Inorder) </td>
-    <td>
-        visiter gauche <br />
-        lire noeud <br />
-        visiter droite
-    </td>
-    <td>4, 2, 7, 5, 8, 1, 3, 9, 6</td>
-  </tr>
-    <tr>
-    <td>Postfixe (Postorder) </td>
-    <td>
-        
-        visiter gauche <br />
-        visiter droite <br />
-        lire noeud 
-    </td>
-    <td>4, 7, 8, 5, 2, 9, 6, 3, 1</td>
-  </tr>
-</table>
 
 
 ## Contribuer à cette gem
