@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Huffman::VERSION
   spec.authors       = ["Martin Lagrange", "Bastien Jorge"]
   spec.email         = ["lagrangemartin@gmail.com", "bastien.jorge@gmail.com"]
-  spec.summary       = %q{Algorithme de Huffman}
-  spec.description   = %q{Algorithme de Huffman}
-  spec.homepage      = ""
+  spec.summary       = %q{Encode and decode a text using the Huffman encoding compression algorithm.}
+  spec.description   = %q{This gem allow you to encode and decode a text using the Huffman encoding compression algorithm. It can also generate and visualize the huffman tree as a png file.}
+  spec.homepage      = "http://github.com/lagrangemartin/huffman"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
