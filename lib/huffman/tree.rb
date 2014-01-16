@@ -1,5 +1,7 @@
+#coding: utf-8
 require 'priority_queue'
 require 'graphviz'
+
 
 module Huffman
 	class Tree
