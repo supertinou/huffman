@@ -1,6 +1,6 @@
 ![Huffman](http://www.mathworks.com/matlabcentral/fx_files/33212/1/huffman.png)
 
-[![Code Climate](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/badges/adbbcd5f91fb73caf186/gpa.png)](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/feed) [![Build Status](https://travis-ci.org/lagrangemartin/huffman.png?branch=master)](https://travis-ci.org/lagrangemartin/huffman)
+[![Code Climate](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/badges/adbbcd5f91fb73caf186/gpa.png)](https://codeclimate.com/repos/52c06ecae30ba036eb00347b/feed) [![Build Status](https://travis-ci.org/lagrangemartin/huffman.png?branch=master)](https://travis-ci.org/lagrangemartin/huffman) [![Gem Version](https://badge.fury.io/rb/huffman.png)](http://badge.fury.io/rb/huffman)
 
 # The Huffman gem
 
@@ -10,7 +10,6 @@ It can also generate and visualize the huffman tree as a png file.
 ## Setup
 
 -Add this line to your application's Gemfile:
-Ajoutez cette ligne à votre Gemfile :
 
 ```ruby
 gem 'huffman'
